@@ -5,11 +5,8 @@ Created on Sat Dec  2 14:09:33 2023
 @author: Leo Zhang
 """
 
-path = 'inputPartial_20231202.txt'
-
-ls_constants1 = [12, 13, 14]
-
-def calc1(path): 
+def calc1(path):
+    ls_constants1 = [12, 13, 14]
     res = 0
     with open(path, 'r') as f:
         for line in f: 
@@ -39,9 +36,7 @@ def calc1(path):
             #print()
         return res
 
-print(calc1(path))
-
-def calc2(path): 
+def calc2(path):
     res = 0
     with open(path, 'r') as f:
         for line in f: 
@@ -60,7 +55,14 @@ def calc2(path):
             res += ls[0] * ls[1] * ls[2]
         return res
 
-print(calc2(path))
+def main(path):
+    print(calc1(path))
+    print(calc2(path))
+
+if __name__ == '__main__':
+    path = 'inputPartial_20231202.txt'
+    print(calc1(path))
+    print(calc2(path))
                 
                     
             

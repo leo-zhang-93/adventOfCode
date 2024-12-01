@@ -4,9 +4,8 @@ Created on Wed Dec 01 15:40:01 2023
 
 @author: Leo Zhang
 """
-path = 'inputPartial_20231201.txt'
 
-def calc1(path): 
+def calc1(path):
     res = 0
     with open(path, 'r') as f:
         for line in f: 
@@ -19,9 +18,6 @@ def calc1(path):
                     r = char
             res += int(l + r)
     return res
-
-a = calc1(path)
-print(f'answer 1 - {a}')
 
 def calc2(path): 
     res = 0
@@ -53,5 +49,12 @@ def check(string, idx):
             return True, str(i + 1)
     return False, None
 
-b = calc2(path)
-print(f'answer 2 - {b}')
+def main(path):
+    a = calc1(path)
+    b = calc2(path)
+    print(f'answer 1 - {a}')
+    print(f'answer 2 - {b}')
+
+if __name__ == '__main__':
+    path = 'inputPartial_20231201.txt'
+    main(path)

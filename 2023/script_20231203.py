@@ -5,15 +5,12 @@ Created on Sun Dec  3 13:01:45 2023
 @author: Leo Zhang
 """
 
-path = 'inputPartial_20231203.txt'
-
 def tomatrix(path): 
     ls = []
     with open(path, 'r') as f:
         for line in f:
             ls.append(line[:-1] + '.')
     return ls
-
 
 def part1(path): 
     mat = tomatrix(path)
@@ -59,8 +56,6 @@ def part1(path):
                 l = None
                 tmp_val = ''
         return res
-print(part1(path))
-
 
 def part2(path): 
     mat = tomatrix(path)
@@ -108,8 +103,7 @@ def part2(path):
                 # print(x, y, ls_res)
                 return ls_res[0] * ls_res[1]
             return 0
-            
-    
+
     res = 0
     for i in range(m): 
         for j in range(n): 
@@ -117,10 +111,14 @@ def part2(path):
             if val == '*': 
                 res += check_two(i, j)
     return res
-print(part2(path))
+
+def main(path):
+    print(part1(path))
+    print(part2(path))
             
-            
-            
+if __name__ == '__main__':
+    path = 'inputPartial_20231203.txt'
+    main(path)
 
             
                     
