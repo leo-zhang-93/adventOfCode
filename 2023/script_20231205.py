@@ -116,13 +116,3 @@ for x, y in ls_seeds1:
     
     
 print(res)
-    
-        
-    
-    
-
-
-
-
-
-        
