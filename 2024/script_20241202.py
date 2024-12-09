@@ -1,14 +1,5 @@
 def getList(path):
-    """Reads and parses the input file, returning sorted lists.
-
-    Args:
-        path (str): The path to the input file.
-
-    Returns:
-        tuple: A tuple containing two sorted lists of integers.
-    """
     ls = []
-
     try:
         with open(path, 'r') as f:
             for line in f:
