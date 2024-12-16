@@ -22,7 +22,7 @@ def calc1(path):
     ls1 = sorted(ls1)
     ls2 = sorted(ls2)
     n = len(ls1)
-    print(sum([abs(ls1[i] - ls2[i]) for i in range(n)]))
+    return sum([abs(ls1[i] - ls2[i]) for i in range(n)])
 
 
 def calc2(path):
@@ -33,13 +33,13 @@ def calc2(path):
     counter2 = Counter(ls2)
     for key in counter1.keys():
         res += key * counter1[key] * counter2[key]
-    print(res)
+    return res
 
 
 if __name__ == "__main__":
     # path1 = 'inputPartial_20241201.txt'
     path1 = 'inputFull_20241201.txt'
     # Part 1:
-    calc1(path1)
+    print(f"Part 1: {calc1(path1)}")
     # Part 2:
-    calc2(path1)
+    print(f"Part 2: {calc2(path1)}")

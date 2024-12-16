@@ -29,8 +29,8 @@ def check1(ls):
 
 
 if __name__ == "__main__":
-    path1 = 'inputPartial_20241202.txt'
-    # path1 = 'inputFull_20241202.txt'
+    # path1 = 'inputPartial_20241202.txt'
+    path1 = 'inputFull_20241202.txt'
     ls = getList(path1)
 
     # Part 1
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     for item in ls:
         if check1(item):
             res1 += 1
-    print(res1)
+    print(f"Part 1: {res1}")
 
     # Part 2
     res2 = 0
@@ -49,4 +49,4 @@ if __name__ == "__main__":
                 # print(item, item[:lenitem] + item[lenitem + 1:])
                 res2 += 1
                 break
-    print(res2)
+    print(f"Part 2: {res2}")

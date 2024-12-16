@@ -75,6 +75,5 @@ if __name__ == "__main__":
                 res1 += check1(i, j)
             if ls[i][j] == 'A':
                 res2 += check2(i, j)
-    print(res1)
-    print(res2)
-
+    print(f"Part 1: {res1}")
+    print(f"Part 2: {res2}")

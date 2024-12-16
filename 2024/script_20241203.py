@@ -40,7 +40,7 @@ if __name__ == "__main__":
         matches = [list(map(int, item.replace('mul(', '').replace(')', '').split(','))) for item in matches]
         for item in matches:
             res1 += item[0] * item[1]
-    print(res1)
+    print(f"Part 1: {res1}")
 
     # Part 2:
     res2 = 0
@@ -64,4 +64,4 @@ if __name__ == "__main__":
             else:
                 val1, val2 = list(map(int, item.replace('mul(', '').replace(')', '').split(',')))
                 res2 += val1 * val2
-    print(res2)
+    print(f"Part 2: {res2}")
