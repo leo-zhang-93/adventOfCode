@@ -62,13 +62,13 @@ if __name__ == "__main__":
 
     res1 = 0
     res2 = 0
-    for i, target, subls in enumerate(ls):
-        print(i)
+    for i, (target, subls) in enumerate(ls):
+        # show some updates as the code will take some minutes to run
+        if i % 50 == 0:
+            print(i)
         if calc1(target, subls, 0):
-            # print('!')
             res1 += target
         if calc2(target, subls, 0):
-            # print('!')
             res2 += target
-    print(res1)
-    print(res2)
+    print(f"Part 1: {res1}")
+    print(f"Part 2: {res2}")

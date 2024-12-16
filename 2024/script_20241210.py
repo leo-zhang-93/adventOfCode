@@ -104,7 +104,5 @@ if __name__ == "__main__":
     path1 = 'inputFull_20241210.txt'
     # path1 = 'inputPartial_20241210.txt'
     ls = getList(path1)
-    print(calc1(ls))
-    print(calc2(ls))
-
-
+    print(f"Part 1: {calc1(ls)}")
+    print(f"Part 2: {calc2(ls)}")

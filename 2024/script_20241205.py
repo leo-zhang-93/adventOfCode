@@ -77,8 +77,8 @@ if __name__ == "__main__":
 
     # Part 1:
     res1 = check1(ls1_, ls2_)
-    print(res1)
+    print(f"Part 1: {res1}")
 
     # Part 2:
     res2 = check2(ls1_, ls2_)
-    print(res2 - res1)
+    print(f"Part 2: {res2 - res1}")

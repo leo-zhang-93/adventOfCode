@@ -80,7 +80,7 @@ if __name__ == "__main__":
     ls = getList(path1)
 
     # Part 1:
-    print(calc1(ls))
+    print(f"Part 1: {calc1(ls)}")
 
     # Part 2:
-    print(calc2(ls))
+    print(f"Part 2: {calc2(ls)}")

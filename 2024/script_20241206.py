@@ -17,7 +17,6 @@ def getList(path):
 def check1(ls):
     m = len(ls)
     n = len(ls[0])
-    print(m, n)
     dic_dirs = {
         (-1, 0): (0, 1),
         (0, 1): (1, 0),
@@ -102,6 +101,6 @@ if __name__ == "__main__":
     # path1 = 'inputPartial_20241206.txt'
     ls = getList(path1)
     # Part 1:
-    print(check1(ls))
+    print(f"Part 1: {check1(ls)}")
     # Part 2:
-    print(check2(ls))
+    print(f"Part 2: {check2(ls)}")
