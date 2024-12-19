@@ -1,4 +1,3 @@
-# @Phi Phi Island D.M.C Restaurant
 def getList(path):
     ls = []
     try:
