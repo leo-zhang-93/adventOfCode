@@ -139,15 +139,3 @@ if __name__ == "__main__":
     ls = getList(path1)
     print(f"Part 1: {calc(ls, 100, 2)}")
     print(f"Part 2: {calc(ls, 100, 20)}")
-
-
-
-
-
-
-
-
-
-
-
-
