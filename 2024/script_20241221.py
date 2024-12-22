@@ -229,7 +229,6 @@ def part2(ls):
     return result
 
 if __name__ == "__main__":
-    from collections import defaultdict
     path1 = 'inputFull_20241221.txt'
     input_ls = get_list(path1)
     print(f'Part 1: {part1(input_ls)}')
