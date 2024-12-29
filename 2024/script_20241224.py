@@ -72,4 +72,8 @@ if __name__ == "__main__":
     # keys_x = sorted([key for key in dic.keys() if key.startswith('x')], reverse=True)
     # keys_y = sorted([key for key in dic.keys() if key.startswith('y')], reverse=True)
     print('Part 1:', int(''.join([str(dic[item]) for item in keys_z]), 2))
+    # I can only solve the part two by looking into
+    # 1) the difference between binary value of z keys and sum of x and y keys
+    # 2) imply the trouble some values of z*
+    # 3) find the patterns of the binary adding and locate the wrong values
     print('Part 2:', ','.join(sorted(['nnt','gws','z13','npf','z19','cph','hgj','z33'])))
